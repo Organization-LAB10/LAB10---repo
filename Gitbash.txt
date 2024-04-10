@@ -1,0 +1,117 @@
+nvrmn@STX-04 MINGW64 ~
+$ git clone https://github.com/Organization-LAB10/LAB10---repo.git
+Cloning into 'LAB10---repo'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 20 (delta 4), reused 13 (delta 0), pack-reused 0
+Receiving objects: 100% (20/20), done.
+Resolving deltas: 100% (4/4), done.
+
+nvrmn@STX-04 MINGW64 ~
+$ ls
+ Alice3/
+ AppData/
+'Application Data'@
+'Cisco Packet Tracer 7.3.0'/
+ Contacts/
+ Cookies@
+ Documents/
+ Downloads/
+ Favorites/
+ IntelGraphicsProfiles/
+ LAB10---repo/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{adf72b27-8a2d-11ed-9d31-ac5064b7a8bd}.TM.blf
+ NTUSER.DAT{adf72b27-8a2d-11ed-9d31-ac5064b7a8bd}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{adf72b27-8a2d-11ed-9d31-ac5064b7a8bd}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ READ.md
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Sti_Trace.log
+ Templates@
+ Videos/
+ ansel/
+ eclipse/
+ eclipse-workspace/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ source/
+
+nvrmn@STX-04 MINGW64 ~
+$ cd LAB10---repo
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git add .
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ ls
+LAB10/
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ vim README.md
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git commit -m "Demo commit message to resolve #4"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'nvrmn@STX-04.(none)')
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git config --global user.email "nvrmnd1029@gmail.com"
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git config --global user.name "Syntoxy"
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git commit -m "Demo commit message to resolve #7"
+[master 9a2cfde] Demo commit message to resolve #7
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 296 bytes | 296.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Organization-LAB10/LAB10---repo.git
+   15f3035..9a2cfde  master -> master
+
+nvrmn@STX-04 MINGW64 ~/LAB10---repo (master)
+$
+
